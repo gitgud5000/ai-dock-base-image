@@ -1,4 +1,4 @@
-ARG IMAGE_BASE="nvidia/cuda:11.8.0-base-ubuntu22.04"
+ARG IMAGE_BASE="nvidia/cuda:12.8.1-base-ubuntu22.04"
 
 # Caddy build
 FROM ubuntu:22.04 as caddybuilder
