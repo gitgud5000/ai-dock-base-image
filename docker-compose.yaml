@@ -5,10 +5,10 @@ services:
       context: ./build
       args:
         # Remove as appropriate
-        IMAGE_BASE: ${IMAGE_BASE:-nvidia/cuda:12.8.1-base-ubuntu22.04}
+        IMAGE_BASE: ${IMAGE_BASE:-nvidia/cuda:12.9.1-base-ubuntu22.04}
         IMAGE_TAG: ${IMAGE_TAG:-v1-redo}
         XPU_TARGET: ${XPU_TARGET:-NVIDIA_GPU}
-        CUDA_STRING: ${CUDA_STRING:-12.8.1-base}
+        CUDA_STRING: ${CUDA_STRING:-12.9.1-base}
         ROCM_STRING: ${ROCM_STRING:-5.7-runtime}
       tags:
         - "ghcr.io/gitgud5000/base-image:${IMAGE_TAG:-v1-redo}"
